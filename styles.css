@@ -1,0 +1,739 @@
+/* Adam Prinz */
+/* adamprinz.com */
+
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*---------------------------------   Global Styles   ----------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Didact Gothic', 'Arial', sans-serif;
+    letter-spacing: .1em;
+}
+
+header {
+    width: 100%;
+    height: 12vmin;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    align-content: baseline;
+    background: rgba(255, 255, 255, 0.76);
+}
+
+header h1 {
+    position: absolute;
+    left: 8vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px 10vw;
+}
+
+header h1 a {
+    text-decoration: none;
+    font-family: 'Megrim', 'Arial', sans-serif;
+    font-size: 8vmin;
+    color: #f3354f;
+}
+
+#flicker {
+  animation: flicker 5s infinite alternate;
+  -webkit-animation: flicker 5s infinite alternate;
+  -moz-animation: flicker 5s infinite alternate;
+  -o-animation: flicker 5s infinite alternate;
+}
+
+#flicker2 {
+  animation: flicker2 5s infinite alternate;
+  -webkit-animation: flicker2 5s infinite alternate;
+  -moz-animation: flicker2 5s infinite alternate;
+  -o-animation: flicker2 5s infinite alternate;
+}
+
+@keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-webkit-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-moz-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@-o-keyframes flicker {
+  40% {opacity: 0.8;}
+  42% {opacity: 0.1;}
+  43% {opacity: 0.8;}
+  45% {opacity: 0.5;}
+  47% {opacity: 0.8;}
+}
+
+@keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-webkit-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-moz-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+@-o-keyframes flicker2 {
+  59% {opacity: 0.8;}
+  60% {opacity: 0.3;}
+  62% {opacity: 0.8;}
+  63% {opacity: 0.3;}
+  65% {opacity: 0.8;}
+}
+
+#menu-btn {
+    width: 75px;
+    cursor: pointer;
+}
+
+#menu-btn span {
+    transition: 1s;
+}
+
+#menu-btn.open span:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(145deg);
+  -moz-transform: translateY(8px) rotate(145deg);
+  -o-transform: translateY(8px) rotate(145deg);
+  transform: translateY(8.9px) rotate(145deg);
+  transition: 1s;
+}
+
+#menu-btn.open span:nth-child(2) {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#menu-btn.open span:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(45deg);
+  -moz-transform: translateY(-8px) rotate(45deg);
+  -o-transform: translateY(-8px) rotate(45deg);
+  transform: translateY(-8px) rotate(215deg);
+  transition: 1s;
+}
+
+.menu {
+    width: 8vmin;
+    height: 3px;
+    background: #f3354f;
+    display: block;
+    margin: 10px;
+}
+
+nav {
+    position: fixed;
+    left: 70%;
+    top: 3.5%;
+    z-index: 9;
+}
+
+nav ul {
+    display: none;
+    height: 85vh;
+    list-style-type: none;
+    margin: 5% 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+nav li {
+    font-size: 1.2em;
+    margin: 5% 0;
+    padding-right: 500px;
+    background: rgba(255, 255, 255, 0.76);
+    transform: translateX(600px);
+    transition: 1.2s ease;
+}
+
+nav li:hover {
+    background: #f3354f;
+    transition: 0.5s ease;
+}
+
+nav a {
+    width: 20vw;
+    display: block;
+    padding: 2vw;
+    text-decoration: none;
+    color: #f3354f;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.menu-item {
+    transform: translateX(0);
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 5vmin;
+    text-align: center;
+    letter-spacing: .2em;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    background: rgba(255,255,255,0.76);
+    left: 0;
+    right: 0;
+    padding: 25px;
+}
+
+h3 {
+    color: #000;
+    font-weight: 100;
+    font-size: 3vmin;
+    text-align: center;
+    padding-bottom: 23vh;
+}
+
+.block1 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #2d2d2d;
+}
+
+.block2 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #bbb;
+}
+
+.img1 {
+    width: 30%;
+    min-width: 200px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    bottom: 0;
+    margin: auto;
+}
+
+.img2 {
+    width: 30%;
+    min-width: 200px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+}
+
+.half1 {
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    bottom: 0;
+}
+
+.half2 {
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+}
+
+footer {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer span {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    font-size: 12px;
+    display: inline;
+    margin: 0 15px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#copyright {
+    font-size: 12px;
+    margin-top: 75px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------------   Index Page (index.html)   -------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#index body {
+    /*Disables Chrome's mobile reload on swipe down*/
+    overflow-y: hidden;
+}
+
+#index canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#index footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#index2 {
+    background-image: url(Images/RBMA_BusStop_MockUp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------   Portfolio Page  (portfolio.html)  -----------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#portfolio div {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23vh;
+}
+
+#portfolio h3 {
+    display: inline-block;
+    width: 25%;
+    color: inherit;
+    padding-bottom: 0;
+}
+
+#portfolio a {
+    text-decoration: none;
+    margin: auto;
+    color: #000;
+}
+
+#portfolio a:hover {
+    color: #f33650;
+    border-bottom: solid 1px #f33650;
+}
+
+#portfolio .active {
+    color: #f33650;
+    border-bottom: solid 1px #f33650;
+}
+
+#portfolio .title, #portfolio2 .title {
+    font-weight: 100;
+    font-size: 8vmin;
+    text-align: center;
+    letter-spacing: .1em;
+    margin-bottom: 30px;
+    padding-top: 10%;
+}
+
+#portfolio .description {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    right: 18%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+}
+
+#portfolio .description2 {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    left: 18%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #000;
+}
+
+#portfolio .button {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#portfolio .button:hover {
+    color: #f3354f;
+    border-color: #f3354f;
+}
+
+#portfolio .button2 {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+#portfolio .button2:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-----------------------------   Contact Page (contact.html)   ------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#contact label {
+    width: 100%;
+    margin: 80px auto 20px auto;
+    text-align: left;
+    display: block;
+    font-family: inherit;
+}
+
+#contact input {
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    border: none;
+    font-family: inherit;
+}
+
+#contact textarea {
+    width: 100%;
+    height: 250px;
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    border: none;
+}
+
+#contact button {
+    width: 30%;
+    margin: 70px auto;
+    padding: 20px;
+    color: #000;
+    background: transparent;
+    text-align: center;
+    border: 1px solid #000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+#contact button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-----------------------------   About Page (about.html)   ------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#about p:first-of-type {
+    padding-top: 10%;
+}
+
+#about p {
+    margin: 50px auto;
+}
+
+#about a {
+    text-decoration: none;
+    margin: auto;
+}
+
+#about .button2 {
+    width: 30%;
+    margin: 0 4.5%;
+    padding: 20px !important;
+    color: #000;
+    background: transparent;
+    text-align: center;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*-----------------------   Social Media Page (socialmedia.html)   ---------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+#socialmedia a {
+    text-decoration: none;
+    color: #f3354f;
+    margin: auto;
+    display: block;
+}
+
+#socialmedia p {
+    text-align: center;
+}
+
+#socialmedia .title {
+    font-weight: 100;
+    font-size: 8vmin;
+    text-align: center;
+    letter-spacing: .1em;
+    margin: 30px;
+    padding: 0;
+}
+
+#socialmedia .description {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    right: 18%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+}
+
+#socialmedia .description2 {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    left: 18%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #000;
+}
+
+#socialmedia .button {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#socialmedia .button:hover {
+    color: #f3354f;
+    border-color: #f3354f;
+}
+
+#socialmedia .button2 {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+#socialmedia .button2:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*----------------------------------   Media Queries   ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 1000px) {
+
+   #portfolio a {
+       width: 100%;
+   }
+   
+   #portfolio .description {
+        width: 70%;
+        position: static;
+        padding-bottom: 50px;
+    }
+
+    #portfolio .description2 {
+        width: 70%;
+        position: static;
+        padding-bottom: 50px;
+    }
+
+    .block1 {
+        height: auto;
+    }
+
+    .block2 {
+        height: auto;
+    }
+
+    .img1, .img2 {
+        width: 50%;
+        position: static;
+        padding: 40px 0;
+        display: block;
+    }
+
+    .half1, .half2 {
+        width: 85%;
+        position: static;
+    }
+
+    #contact form {
+        padding: 25px 0 125px 0;
+    }
+
+    #contact label {
+        width: 90%;
+        margin: 55px auto 20px auto;
+    }
+    
+    #contact input {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #contact textarea {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #contact button {
+        width: 80%;
+        position: static;
+        display: block;
+    }
+
+    #about .half1 {
+        padding-bottom: 20px;
+    }
+
+    #about img {
+        padding: 40px 0 0 0;
+    }
+
+    #about p:first-of-type {
+        padding-top: 0;
+    }
+
+    #about .button2 {
+        width: 80%;
+        margin: 45px 4.5%;
+        display: block;
+    }
+
+    #socialmedia a {
+        width: 100%;
+    }
+    
+    #socialmedia .description {
+         width: 70%;
+         position: static;
+         padding-bottom: 50px;
+     }
+ 
+     #socialmedia .description2 {
+         width: 70%;
+         position: static;
+         padding-bottom: 50px;
+     }
+}
+
+@media only screen and (max-width: 580px) {
+
+    header h1 {
+        top: 9px;
+        padding: 0;
+    }
+ 
+    nav {
+        top: 18px;
+    }
+ 
+    .menu {
+        height: 2px;
+        margin: 6px;
+    }
+
+
+}

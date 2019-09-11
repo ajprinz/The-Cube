@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hyperlink Cube</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="Scripts/three.min.js"></script>
+        <script src="Scripts/TrackballControls.js"></script>
+        <script src="Scripts/tweenjs-0.6.2.min.js"></script>
+    </head>
+    <body id="index">
+        <header>
+            <h1><a href="index.html">A<span id="flicker">d</span>am P<span id="flicker2">ri</span>nz</a></h1>
+            <nav id="nav">
+                <div id="menu-btn">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="socialmedia.html">Social Media</a></li>
+                </ul>
+            </nav>
+            <script src="Scripts/menu.js"></script>
+        </header>
+        
+        <script>
+            if(!window.WebGLRenderingContext) {
+                // the browser doesn't even know what WebGL is
+                alert("WebGL not supported, visit http://get.webgl.org");
+            }
+            else {
+                //Check for Chrome (it blacklisted WebGL)
+                if(!!window.chrome) {
+                    // browser supports WebGL but initialization failed
+                    alert("WebGL is supported but Google Chrome may have blacklisted WebGL. Please use FireFox for the full experience.");
+                }
+            }
+        </script>
+        <script src="Scripts/cubeScript.js"></script>
+        <!-- canvas is appended -->
+        
+        <footer>
+            <p>Copyright &copy;2017 adamprinz.com</p>
+        </footer>
+    </body>
+        
+</html>
